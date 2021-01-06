@@ -7,5 +7,7 @@ NumPy <br />
 Pandas <br />
 Scipy <br />
 Tensorflow <br />
+Keras <br />
+Ipython <br />
 Seaborn <br />
 Matplotlib
