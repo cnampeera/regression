@@ -1,4 +1,10 @@
 # REGRESSION
 A python code to optimise energy output from wave energy converters using their locations
-##Getting started 
-Downlaod the wave energy converters dataset from the UCI repository 
+## Getting started 
+Downlaod the wave energy converters dataset from the UCI repository
+### Built with 
+NumPy
+Pandas
+Scipy
+Tensorflow
+Seaborn
