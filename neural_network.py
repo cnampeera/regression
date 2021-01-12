@@ -12,10 +12,9 @@ import keras.backend.tensorflow_backend as tfback
 from IPython.display import display, clear_output
 
 #importing sydney dataset(remember to replace first parameter with acutal file name or path)
-sydney_df = pd.read_csv(csvfile, 
-                        names = ['X1','X2','X3','X4','X5','X6','X7','X8','X9','X10','X11','X12','X13','X14','X15','X16',
-                                 'Y1','Y2','Y3','Y4','Y5','Y6','Y7','Y8','Y9','Y10','Y11','Y12','Y13','Y14','Y15','Y16',
-                                 'P1','P2','P3','P4','P5','P6','P7','P8','P9','P10','P11','P12','P13','P14','P15','P16','P_total'])
+sydney_df = pd.read_csv(csvfile, delimiter = ',')
+rows = [[float(v) for v in row] for row in sydney_df]
+rows = np.asarray(rows, dtype='float32')
 Xs = rows[:,0:32]
 ys = rows[:,32:49]
 val_ratio = 0.2
